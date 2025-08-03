@@ -19,9 +19,9 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Only use the wish routes
+
 app.use("/api/wishes", wishRoutes); 
-// Optional: Basic root route
+
 app.get("/", (req, res) => {
   res.send("Wish API is running");
 });
