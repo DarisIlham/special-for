@@ -11,11 +11,11 @@ const app = express();
 await connectDB();
 
 app.use(cors({
-  // origin: [
-  //   'http://localhost:5173',
-  //   'https://a-gift-for-dinda.vercel.app'
-  // ],
-  // credentials: true
+  origin: [
+    'http://localhost:5173',
+    'https://a-gift-for-dinda.vercel.app'
+  ],
+  credentials: true
 }));
 app.use(express.json());
 
