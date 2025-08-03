@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-connectDB();
+await connectDB();
 
 app.use(cors({
   // origin: [
@@ -24,6 +24,11 @@ app.use("/api/wishes", wishRoutes);
 // Optional: Basic root route
 app.get("/", (req, res) => {
   res.send("Wish API is running");
+});
+
+app.use((err, req, res, next) => {
+  console.error("Unhandled error:", err.stack);
+  res.status(500).json({ message: "Something went wrong", error: err.message });
 });
 
 export default app;
