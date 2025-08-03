@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Your frontend URL
+  origin: 'https://a-gift-for-dinda.vercel.app' // Your frontend URL
 }));
 app.use(express.json());
 
