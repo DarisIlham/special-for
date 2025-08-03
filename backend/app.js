@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
-import wishRoutes from "./routes/wish.routes.js"; // Make sure this import path is correct
+import wishRoutes from "./routes/wish.routes.js"; 
 
 dotenv.config();
 
@@ -20,8 +20,7 @@ app.use(cors({
 app.use(express.json());
 
 // Only use the wish routes
-app.use("/api/wishes", wishRoutes); // Changed from "/api/wish" to "/api/wishes" for better REST convention
-
+app.use("/api/wishes", wishRoutes); 
 // Optional: Basic root route
 app.get("/", (req, res) => {
   res.send("Wish API is running");

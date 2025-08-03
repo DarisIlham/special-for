@@ -5,7 +5,7 @@ import music from "./music/Song.mp3";
 import special from "../src/img/special.png";
 import gift from "../src/img/gift.jpeg";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;;
 
 export default function BirthdayWebsite() {
   const [counter, setCounter] = useState(0);
