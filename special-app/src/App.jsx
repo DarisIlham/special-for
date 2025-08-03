@@ -368,7 +368,7 @@ export default function BirthdayWebsite() {
               <div className="bg-gray-700/40 rounded-lg p-4 border border-blue-400/20">
                 <p className="text-blue-100/90 text-lg leading-relaxed">
                   "May your birthday shine as bright as the stars above and
-                  bring you dreams as beautiful as moonbeams!"
+                  bring you dreams as beautiful as moonlight!"
                 </p>
               </div>
 
